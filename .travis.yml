@@ -11,6 +11,9 @@ install:
   # Install Ansible.
   - pip install ansible
 
+  # Add ansible.cfg to pick up roles path.
+  - "{ echo '[defaults]'; echo 'roles_path = playbooks/roles/'; } >> ansible.cfg"
+
 script:
   # We'll add some commands to test the role here.
 

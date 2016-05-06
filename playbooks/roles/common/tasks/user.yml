@@ -1,5 +1,5 @@
 ---
-  - name: add users
-    user: name={{ item.name }} state=present groups={{ item.groups }}
+  - name: add sudo users
+    user: name={{ item }} state=present groups=sudo
     with_items:
-      - { name: 'peer', groups: 'sudo' }
+      - {{ sudo_users }}

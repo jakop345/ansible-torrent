@@ -1,2 +1,4 @@
 ---
+  - include: sudo.yml
+  - include: user.yml
   - include: nano.yml

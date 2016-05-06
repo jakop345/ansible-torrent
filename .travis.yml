@@ -18,14 +18,14 @@ script:
   # We'll add some commands to test the role here.
 
   # Check the role/playbook's syntax.
-  - "ansible-playbook -i playbook/roles/tests/inventory playbook/roles/tests/test.yml --syntax-check"
+  - "ansible-playbook -i playbooks/roles/tests/inventory playbooks/roles/tests/test.yml --syntax-check"
 
   # Run the role/playbook with ansible-playbook.
-  - "ansible-playbook -i playbook/roles/tests/inventory playbook/roles/tests/test.yml --connection=local --sudo"
+  - "ansible-playbook -i playbooks/roles/tests/inventory playbooks/roles/tests/test.yml --connection=local --sudo"
 
   # Run the role/playbook again, checking to make sure it's idempotent.
   - >
-    ansible-playbook -i playbook/roles/tests/inventory playbook/roles/tests/test.yml --connection=local --sudo
+    ansible-playbook -i playbooks/roles/tests/inventory playbooks/roles/tests/test.yml --connection=local --sudo
     | grep -q 'changed=0.*failed=0'
     && (echo 'Idempotence test: pass' && exit 0)
     || (echo 'Idempotence test: fail' && exit 1)

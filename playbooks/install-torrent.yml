@@ -1,0 +1,6 @@
+---
+  - host: all
+    remote_user: root
+    roles:
+      - common
+      - node

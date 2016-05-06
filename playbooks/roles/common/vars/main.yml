@@ -1,3 +1,3 @@
-
-sudo_users:
-  - lunik
+---
+  users:
+    - { name: 'lunik', groups: 'sudo' }

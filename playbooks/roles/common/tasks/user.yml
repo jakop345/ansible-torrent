@@ -2,4 +2,4 @@
   - name: add users
     user: name={{ item.name }} state=present groups={{ item.groups }}
     with_items:
-      - \"{{ users }}\"
+      - { name: 'peer', groups: 'sudo' }

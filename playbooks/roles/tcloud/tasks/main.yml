@@ -4,6 +4,5 @@
 
   - name: install node modules
     npm: path: {{ dir_destination }}/{{ git_repo_name }} state=latest
-
-  - name: start tcloud server
-    command: npm start {{ dir_destination }}/{{ git_repo_name }}
+    notify:
+      - start tcloud

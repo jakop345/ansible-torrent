@@ -1,4 +1,5 @@
 
 # User vars
 users:
-  - { name: 'lunik', groups: 'sudo' }
+  - name: 'lunik'
+    groups: 'sudo'

@@ -1,5 +1,0 @@
-
-# User vars
-users:
-  - name: 'lunik'
-    groups: 'sudo'

@@ -1,0 +1,6 @@
+---
+  - name: install node sources
+    script: {{ node_source }}
+
+  - name: install nodejs package
+    apt: name=nodejs state=latest

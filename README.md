@@ -1,4 +1,6 @@
 # ansible-torrent
+![build](https://travis-ci.org/Lunik/ansible-torrent.svg)
+
 Setup server and install [Lunik-Torrent](https://github.com/Lunik/Lunik-Torrent)
 
 ## Usage

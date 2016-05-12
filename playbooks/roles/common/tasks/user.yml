@@ -1,4 +1,4 @@
 ---
   - name: add users
     user: name={{ item.name }} state=present groups={{ item.groups }}
-    with_items: {{ users }}
+    with_items: "{{ users }}"

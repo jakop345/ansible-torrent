@@ -1,6 +1,6 @@
 ---
   - name: clone tcloud repo
-    git: repo={{ git_repo }} dest={{ dir_destination }}
+    git: repo={{ git_repo }} dest={{ dir_destination }}/{{ git_repo_name }}
 
   - name: install node modules
     npm: path={{ dir_destination }}/{{ git_repo_name }} state=latest

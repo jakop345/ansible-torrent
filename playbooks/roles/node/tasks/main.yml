@@ -1,6 +1,6 @@
 ---
   - name: get node install source script
-    get_url: url=node_source dest=/tmp/{{ node_source_setup_script }}
+    get_url: url={{ node_source }} dest=/tmp/{{ node_source_setup_script }}
 
   - name: install node sources
     script: /tmp/{{ node_source_setup_script }}

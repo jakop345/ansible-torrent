@@ -1,4 +1,4 @@
 
-node_version: 6
-node_source: https://deb.nodesource.com/setup_{{ node_version }}.x
-node_source_setup_script: node_source_setup
+node_version: "6"
+node_source: "https://deb.nodesource.com/setup_{{ node_version }}.x"
+node_source_setup_script: "node_source_setup"

@@ -1,3 +1,5 @@
 ---
   - name: install nano package
-    apt: name=nano state=latest
+    apt:
+      name: "nano"
+      state: "latest"

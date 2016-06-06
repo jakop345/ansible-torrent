@@ -1,15 +1,19 @@
 ---
   - name: get node install source script
-    get_url: url=node_source dest=/tmp/{{ node_source_setup_script }}
+    get_url:
+      url: "{{ node_source }}"
+      dest: "/tmp/{{ node_source_setup_script }}"
 
   - name: install node sources
-    script: /tmp/{{ node_source_setup_script }}
+    script: "/tmp/{{ node_source_setup_script }}"
 
   - name: install nodejs package
-    apt: name=nodejs state=latest
+    apt:
+      name: "nodejs"
+      state: "latest"
 
   - name: install forever
     npm:
-      name: forever
-      state: latest
-      global: yes
+      name: "forever"
+      state: "latest"
+      global: "yes"

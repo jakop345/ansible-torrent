@@ -1,3 +1,5 @@
 ---
   - name: install git package
-    apt: name=git state=latest
+    apt:
+      name: "git"
+      state: "latest"

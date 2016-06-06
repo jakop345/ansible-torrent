@@ -1,5 +1,5 @@
 ---
-  - include: sudo.yml
-  - include: user.yml
-  - include: nano.yml
-  - include: git.yml
+  - include: "sudo.yml"
+  - include: "user.yml"
+  - include: "nano.yml"
+  - include: "git.yml"

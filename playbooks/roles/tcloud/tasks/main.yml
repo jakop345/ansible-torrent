@@ -2,7 +2,7 @@
   - name: clone tcloud repo
     git:
       repo: "{{ git_repo }}"
-      dest: "{{ dir_destination }}/{{ git_repo }}"
+      dest: "{{ dir_destination }}/{{ git_repo_name }}"
 
   - name: install node modules
     npm:

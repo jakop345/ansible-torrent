@@ -7,3 +7,9 @@
 
   - name: install nodejs package
     apt: name=nodejs state=latest
+
+  - name: install forever
+    npm:
+      name: forever
+      state: latest
+      global: yes
